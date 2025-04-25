@@ -12,15 +12,15 @@ const AboutSection = () => {
           <div className="w-20 h-1 bg-red-600 mx-auto"></div>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-          <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
-              <img 
-                src="/71032151_2904045452957712_5544831817409888256_n.jpg" 
-                alt="Minha foto de perfil" 
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-              />
-            </div>
-          </div>
+           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
+                      <img 
+                        src="/Marlon-jornal.png" 
+                        alt="Marlon Silva" 
+                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                      />
+                    </div>
+      
+        </div>
     
 
           
