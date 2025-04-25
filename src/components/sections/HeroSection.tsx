@@ -12,14 +12,14 @@ const HeroSection = () => {
       {/* Content */}
       <div className="relative z-20 text-center px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto animate-fade-in">
         <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold tracking-tight mb-4">
-          <span className="text-white">Creative </span>
-          <span className="text-red-600">Motion Design</span>
+          <span className="text-white">Graphic, </span>
+          <span className="text-red-600">Motion </span>
           <span className="text-white"> & </span>
-          <span className="text-red-600">Video Production</span>
+          <span className="text-red-600">Video Design</span>
         </h1>
         
         <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Bringing your ideas to life with cutting-edge animation and professional video production
+          Bringing your ideas to life with cutting-edge digital design and professional video production
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
