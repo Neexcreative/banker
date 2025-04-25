@@ -14,7 +14,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
             <img 
-              src="/Marlon-jornal.png" 
+              src="/IMG_5774.png" 
               alt="Marlon Silva" 
               style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
             />
