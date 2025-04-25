@@ -55,7 +55,7 @@ const AboutSection = () => {
             </div>
             
             <a 
-  href="/CV - Marlon Silva.pdf" 
+  href="/CVMarlonSilva.pdf" 
   target="_blank" 
   rel="noopener noreferrer"
   className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 inline-block"
