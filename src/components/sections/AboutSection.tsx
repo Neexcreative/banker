@@ -8,20 +8,17 @@ const AboutSection = () => {
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="text-red-600">About</span> Me
           </h2>
-          <div className="w-20 h-1 bg-red-600 mx-auto"></div>
+          <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
         </div>
         
-           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
-                      <img 
-                        src="/Marlon-jornal.png" 
-                        alt="Marlon Silva" 
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
-                      />
-                    </div>
-      
-        </div>
-    
-
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
+            <img 
+              src="/Marlon-jornal.png" 
+              alt="Marlon Silva" 
+              style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+            />
+          </div>
           
           <div className="animate-slide-up">
             <h3 className="text-2xl font-bold mb-4">Marlon Franca (Marloneex)</h3>
@@ -54,14 +51,13 @@ const AboutSection = () => {
             </div>
             
             <a 
-  href="/CVMarlonSilva.pdf" 
-  target="_blank" 
-  rel="noopener noreferrer"
-  className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 inline-block"
->
-  Download Resume
-</a>
-
+              href="/CVMarlonSilva.pdf" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 inline-block"
+            >
+              Download Resume
+            </a>
           </div>
         </div>
       </div>
