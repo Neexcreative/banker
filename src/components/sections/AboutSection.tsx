@@ -16,7 +16,7 @@ const AboutSection = () => {
           {/* Image placeholder - would be replaced with actual image */}
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
              <Image 
-                src="/experience.png" 
+                src="globe.svg" 
                 alt="My photo" 
                 fill
                 style={{ objectFit: 'cover' }}
