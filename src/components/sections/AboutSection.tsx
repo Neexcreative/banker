@@ -15,16 +15,15 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Image placeholder - would be replaced with actual image */}
           <div className="relative h-80 md:h-96 rounded-lg overflow-hidden shadow-xl border-2 border-red-600">
-  <Image 
-    src="/experience.png" 
-    alt="Minha foto de perfil" 
-    fill
-    style={{ objectFit: 'cover' }}
-    priority
-  />
-</div>
-
-          </div>
+             <Image 
+                src="/experience.png" 
+                alt="My photo" 
+                fill
+                style={{ objectFit: 'cover' }}
+                priority
+              />
+           </div>
+         </div>
           
           <div className="animate-slide-up">
             <h3 className="text-2xl font-bold mb-4">Marlon Franca (Marloneex)</h3>
