@@ -54,9 +54,13 @@ const AboutSection = () => {
               </div>
             </div>
             
-            <button className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105">
-              Download Resume
-            </button>
+            <a 
+  href="/CV - Marlon Silva.pdf" 
+  download
+  className="bg-red-600 hover:bg-red-700 text-white px-6 py-3 rounded-md transition-all duration-300 transform hover:scale-105 inline-block"
+>
+  Download Resume
+</a>
           </div>
         </div>
       </div>
