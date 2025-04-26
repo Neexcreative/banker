@@ -33,19 +33,19 @@ const AboutSection = () => {
               <div>
                 <h4 className="text-red-600 font-bold mb-2">Skills</h4>
                 <ul className="text-gray-300">
-                  <li className="mb-1">• Motion Graphics</li>
-                  <li className="mb-1">• Video Editing</li>
-                  <li className="mb-1">• 3D Animation</li>
-                  <li className="mb-1">• Visual Effects</li>
+                  <li className="mb-1">• Graphic Desing</li>
+                  <li className="mb-1">• Video Production</li>
+                  <li className="mb-1">• Motion Graphic</li>
+                  <li className="mb-1">• 3D Render</li>
                 </ul>
               </div>
               <div>
-                <h4 className="text-red-600 font-bold mb-2">Software</h4>
+                <h4 className="text-red-600 font-bold mb-2">Softwares</h4>
                 <ul className="text-gray-300">
-                  <li className="mb-1">• After Effects</li>
-                  <li className="mb-1">• Premiere Pro</li>
-                  <li className="mb-1">• Cinema 4D</li>
+                  <li className="mb-1">• Adobe Suite</li>
                   <li className="mb-1">• DaVinci Resolve</li>
+                  <li className="mb-1">• Cinema 4D</li>
+                  <li className="mb-1">• MS Office</li>
                 </ul>
               </div>
             </div>
