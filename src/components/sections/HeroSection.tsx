@@ -19,7 +19,7 @@ const HeroSection = () => {
         </h1>
         
         <p className="text-xl sm:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
-          Bringing your ideas to life with cutting-edge digital design and professional video production
+          Turning your ideas into reality with cutting-edge digital design and professional video production.
         </p>
         
         <div className="flex flex-col sm:flex-row justify-center gap-4">
