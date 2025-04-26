@@ -17,8 +17,8 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Brand Motion Package',
-      category: 'Motion Graphics',
+      title: 'Brand Design',
+      category: 'Brand eEsign',
       description: 'A comprehensive motion graphics package for a tech startup, including logo animation, lower thirds, and transition elements.',
       technical: 'Created using After Effects with Cinema 4D integration for 3D elements. Custom expressions for dynamic animations.',
       client: 'TechVision Inc.'
@@ -74,7 +74,7 @@ const ProjectsSection = () => {
           </h2>
           <div className="w-20 h-1 bg-red-600 mx-auto mb-6"></div>
           <p className="text-gray-300 max-w-3xl mx-auto">
-            A selection of my recent work in motion design and video production, showcasing technical expertise and creative problem-solving.
+            A selection of recent work, showcasing expertise and creative solutions.
           </p>
         </div>
         
