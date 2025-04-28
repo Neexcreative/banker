@@ -4,7 +4,7 @@ const ServicesSection = () => {
   const services = [
     {
       id: 1,
-      title: 'Motion Graphics',
+      title: 'Graphic Design',
       description: 'Custom motion graphics that bring your brand to life with dynamic animations and visual storytelling.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -14,7 +14,7 @@ const ServicesSection = () => {
     },
     {
       id: 2,
-      title: 'Video Editing',
+      title: 'Video Production',
       description: 'Professional video editing services that transform raw footage into polished, engaging content.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -24,7 +24,7 @@ const ServicesSection = () => {
     },
     {
       id: 3,
-      title: '2D/3D Animation',
+      title: '2D/3D Design',
       description: 'Captivating 2D and 3D animations that communicate complex ideas with clarity and style.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -34,7 +34,7 @@ const ServicesSection = () => {
     },
     {
       id: 4,
-      title: 'Visual Storytelling',
+      title: 'Social Media Content',
       description: 'Strategic visual narratives that connect with your audience and communicate your message effectively.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -44,7 +44,7 @@ const ServicesSection = () => {
     },
     {
       id: 5,
-      title: 'VFX & Compositing',
+      title: 'Enterview And Tetimonial Recording',
       description: 'Seamless visual effects and compositing that enhance your video with realistic and creative elements.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -54,7 +54,7 @@ const ServicesSection = () => {
     },
     {
       id: 6,
-      title: 'Color Grading',
+      title: 'Photography',
       description: 'Expert color grading that sets the mood and enhances the visual impact of your video content.',
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" className="h-12 w-12 text-red-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
