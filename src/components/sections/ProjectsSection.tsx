@@ -19,7 +19,7 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Lagoinha Dublin Academy',
+      title: 'Brand Design - Lagoinha Academy',
       category: 'Brand Design',
       description: 'covering concept, logo, and visual system for a Christian training and education platform.',
       technical: 'End-to-end branding process including brand research, sketching, and visual application across digital materials. Tools used include Adobe Suite for design.',
