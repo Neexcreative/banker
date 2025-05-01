@@ -19,13 +19,13 @@ const ProjectsSection = () => {
   const projects = [
     {
       id: 1,
-      title: 'Brand Design',
+      title: 'Lagoinha Dublin Academy',
       category: 'Brand Design',
       description: 'covering concept, logo, and visual system for a Christian training and education platform.',
       technical: 'End-to-end branding process including brand research, sketching, and visual application across digital materials. Tools used include Adobe Suite for design.',
       client: 'Lagoinha Dublin Church.',
-      url: 'https://seusite.com/lagoinha-academy',
-      moreProjectsUrl: '/#projects'
+      url: 'https://www.behance.net/gallery/218514493/Lagoinha-Ireland-Academy',
+      moreProjectsUrl: 'https://www.behance.net/neexcreative'
     },
     {
       id: 2,
