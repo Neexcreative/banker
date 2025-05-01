@@ -86,9 +86,20 @@ const ProjectsSection = () => {
               onClick={() => setActiveProject(project)}
             >
               {/* Project thumbnail placeholder */}
-              <div className="relative h-48 bg-gradient-to-br from-gray-800 to-black flex items-center justify-center">
-                <span className="text-red-600 font-bold">{project.category}</span>
-              </div>
+             <div className="relative h-48 overflow-hidden">
+  {project.id === 1 ? (
+    <img
+      src="/trellobanner.jpg"
+      alt={project.title}
+      className="object-cover w-full h-full"
+    />
+  ) : (
+    <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
+      <span className="text-red-600 font-bold">{project.category}</span>
+    </div>
+  )}
+</div>
+
               
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
