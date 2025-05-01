@@ -18,7 +18,7 @@ const ProjectsSection = () => {
     {
       id: 1,
       title: 'Brand Design',
-      category: 'Brand eEsign',
+      category: 'Brand Design',
       description: 'A comprehensive motion graphics package for a tech startup, including logo animation, lower thirds, and transition elements.',
       technical: 'Created using After Effects with Cinema 4D integration for 3D elements. Custom expressions for dynamic animations.',
       client: 'TechVision Inc.'
