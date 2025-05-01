@@ -9,11 +9,13 @@ interface Project {
   description: string;
   technical: string;
   client: string;
+  url?: string;
+  moreProjectsUrl?: string;
 }
 
 const ProjectsSection = () => {
   const [activeProject, setActiveProject] = useState<Project | null>(null);
-  
+
   const projects = [
     {
       id: 1,
@@ -21,7 +23,9 @@ const ProjectsSection = () => {
       category: 'Brand Design',
       description: 'covering concept, logo, and visual system for a Christian training and education platform.',
       technical: 'End-to-end branding process including brand research, sketching, and visual application across digital materials. Tools used include Adobe Suite for design.',
-      client: 'Lagoinha Dublin Church.'
+      client: 'Lagoinha Dublin Church.',
+      url: 'https://seusite.com/lagoinha-academy',
+      moreProjectsUrl: '/#projects'
     },
     {
       id: 2,
@@ -77,36 +81,35 @@ const ProjectsSection = () => {
             A selection of recent work, showcasing expertise and creative solutions.
           </p>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project) => (
-            <div 
+            <div
               key={project.id}
               className="bg-black border border-gray-800 rounded-lg overflow-hidden shadow-lg transition-all duration-300 hover:shadow-red-600/20 hover:border-red-600/50 hover:transform hover:scale-105"
               onClick={() => setActiveProject(project)}
             >
               {/* Project thumbnail placeholder */}
-             <div className="relative h-48 overflow-hidden">
+              <div className="relative h-48 overflow-hidden">
                 {project.id === 1 ? (
                   <img
-                  src="/trellobanner.jpg"
-                  alt={project.title}
-                  className="object-cover w-full h-full"
-                />
+                    src="/trellobanner.jpg"
+                    alt={project.title}
+                    className="object-cover w-full h-full"
+                  />
                 ) : (
-            <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
-          <span className="text-red-600 font-bold">{project.category}</span>
-        </div>
-              )}
-        </div>
+                  <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
+                    <span className="text-red-600 font-bold">{project.category}</span>
+                  </div>
+                )}
+              </div>
 
-              
               <div className="p-6">
                 <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                 <p className="text-gray-400 text-sm mb-4">{project.description}</p>
                 <div className="flex justify-between items-center">
                   <span className="text-gray-500 text-xs">{project.client}</span>
-                  <button 
+                  <button
                     className="text-red-600 hover:text-red-500 text-sm font-medium"
                     onClick={(e) => {
                       e.stopPropagation();
@@ -121,7 +124,7 @@ const ProjectsSection = () => {
           ))}
         </div>
       </div>
-      
+
       {/* Project Modal */}
       {activeProject && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50 p-4">
@@ -131,7 +134,7 @@ const ProjectsSection = () => {
                 <h3 className="text-2xl font-bold">
                   <span className="text-red-600">{activeProject.category}:</span> {activeProject.title}
                 </h3>
-                <button 
+                <button
                   className="text-gray-400 hover:text-white"
                   onClick={() => setActiveProject(null)}
                 >
@@ -140,38 +143,56 @@ const ProjectsSection = () => {
                   </svg>
                 </button>
               </div>
-              
+
               {/* Project image cover */}
-                    <div className="relative h-64 md:h-80 mb-6 rounded overflow-hidden">
-                      {activeProject.id === 1 ? (
-                        <img
-                          src="/trellobanner.jpg"
-                          alt={activeProject.title}
-                          className="object-cover w-full h-full"
-                        />
-                      ) : (
-                        <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
-                      <span className="text-gray-600">Project Preview</span>
-                    </div>
-                  )}
-                </div>
-              
+              <div className="relative h-64 md:h-80 mb-6 rounded overflow-hidden">
+                {activeProject.id === 1 ? (
+                  <img
+                    src="/trellobanner.jpg"
+                    alt={activeProject.title}
+                    className="object-cover w-full h-full"
+                  />
+                ) : (
+                  <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
+                    <span className="text-gray-600">Project Preview</span>
+                  </div>
+                )}
+              </div>
+
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-2">Project Overview</h4>
                 <p className="text-gray-300 mb-4">{activeProject.description}</p>
-                
+
                 <h4 className="text-lg font-semibold mb-2">Technical Details</h4>
                 <p className="text-gray-300 mb-4">{activeProject.technical}</p>
-                
+
                 <div className="bg-black bg-opacity-50 p-4 rounded-lg">
                   <h4 className="text-red-600 font-semibold mb-2">Client</h4>
                   <p className="text-gray-300">{activeProject.client}</p>
                 </div>
               </div>
-              
-              <div className="flex justify-end">
-                <button 
-                  className="bg-red-600 hover:bg-red-700 text-white px-4 py-2 rounded transition-colors duration-300"
+
+              <div className="flex flex-col sm:flex-row justify-between items-center gap-4 mt-6">
+                <div className="flex gap-4">
+                  <a
+                    href={activeProject.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-sm text-gray-400 hover:text-red-500 underline transition"
+                  >
+                    View Full Project
+                  </a>
+
+                  <a
+                    href={activeProject.moreProjectsUrl}
+                    className="text-sm text-gray-400 hover:text-red-500 underline transition"
+                  >
+                    More Projects
+                  </a>
+                </div>
+
+                <button
+                  className="text-sm text-gray-500 hover:text-white transition"
                   onClick={() => setActiveProject(null)}
                 >
                   Close
