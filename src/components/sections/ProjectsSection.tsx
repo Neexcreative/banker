@@ -19,9 +19,9 @@ const ProjectsSection = () => {
       id: 1,
       title: 'Brand Design',
       category: 'Brand Design',
-      description: 'A comprehensive motion graphics package for a tech startup, including logo animation, lower thirds, and transition elements.',
-      technical: 'Created using After Effects with Cinema 4D integration for 3D elements. Custom expressions for dynamic animations.',
-      client: 'TechVision Inc.'
+      description: 'covering concept, logo, and visual system for a Christian training and education platform.',
+      technical: 'End-to-end branding process including brand research, sketching, and visual application across digital materials. Tools used include Adobe Suite for design.',
+      client: 'Lagoinha Dublin Church.'
     },
     {
       id: 2,
