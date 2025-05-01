@@ -185,6 +185,8 @@ const ProjectsSection = () => {
 
                   <a
                     href={activeProject.moreProjectsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-sm text-gray-400 hover:text-red-500 underline transition"
                   >
                     More Projects
