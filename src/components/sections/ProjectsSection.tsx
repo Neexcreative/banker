@@ -25,7 +25,7 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: 'Product Launch Video',
+      title: 'Video Production',
       category: 'Video Production',
       description: 'High-end product launch video showcasing features and benefits with cinematic visuals and dynamic motion graphics.',
       technical: 'Shot on RED camera with custom lighting setup. Post-production in Premiere Pro with After Effects integration.',
@@ -33,15 +33,15 @@ const ProjectsSection = () => {
     },
     {
       id: 3,
-      title: '3D Character Animation',
-      category: '3D Animation',
+      title: '3D Design',
+      category: '3D Design',
       description: 'Character-driven animation for an educational series explaining complex concepts through engaging storytelling.',
       technical: 'Modeled and rigged in Blender, animated in Maya, with compositing in After Effects.',
       client: 'EduMedia Solutions'
     },
     {
       id: 4,
-      title: 'Corporate Explainer',
+      title: 'Motion Graphics',
       category: 'Motion Graphics',
       description: 'Clean, professional explainer video breaking down complex business processes into simple, engaging visuals.',
       technical: 'Vector animations created in Illustrator and animated in After Effects with custom scripts for efficiency.',
@@ -49,16 +49,16 @@ const ProjectsSection = () => {
     },
     {
       id: 5,
-      title: 'Music Video Effects',
-      category: 'Visual Effects',
+      title: 'Social Media',
+      category: 'Social Media',
       description: 'Creative visual effects for a music video, including particle systems, color grading, and composited elements.',
       technical: 'Shot on Blackmagic camera. VFX created using a combination of After Effects, Nuke, and Trapcode Suite.',
       client: 'Rhythm Records'
     },
     {
       id: 6,
-      title: 'Social Media Package',
-      category: 'Motion Graphics',
+      title: 'Photography',
+      category: 'Photography',
       description: 'Set of animated templates for social media content, optimized for various platforms and aspect ratios.',
       technical: 'Designed in Figma, animated in After Effects, with expression-driven responsive layouts.',
       client: 'Digital Marketing Agency'
