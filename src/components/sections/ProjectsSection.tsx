@@ -29,7 +29,7 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: 'Opener Conference – Lagoinha Conference',
+      title: 'Video Production – Conference Opener',
       category: 'Video Production',
       description: 'Full audiovisual production for a church conference, including direction, editing, motion graphics, and final delivery.',
       technical: 'End-to-end workflow using Adobe Premiere, After Effects and DaVinci Resolve. Included animation, color grading and final mastering.',
