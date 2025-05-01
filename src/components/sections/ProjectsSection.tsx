@@ -87,18 +87,18 @@ const ProjectsSection = () => {
             >
               {/* Project thumbnail placeholder */}
              <div className="relative h-48 overflow-hidden">
-  {project.id === 1 ? (
-    <img
-      src="/trellobanner.jpg"
-      alt={project.title}
-      className="object-cover w-full h-full"
-    />
-  ) : (
-    <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
-      <span className="text-red-600 font-bold">{project.category}</span>
-    </div>
-  )}
-</div>
+                {project.id === 1 ? (
+                  <img
+                  src="/trellobanner.jpg"
+                  alt={project.title}
+                  className="object-cover w-full h-full"
+                />
+                ) : (
+            <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
+          <span className="text-red-600 font-bold">{project.category}</span>
+        </div>
+              )}
+        </div>
 
               
               <div className="p-6">
@@ -141,10 +141,20 @@ const ProjectsSection = () => {
                 </button>
               </div>
               
-              {/* Project video/image placeholder */}
-              <div className="relative h-64 md:h-80 bg-gradient-to-br from-gray-800 to-black mb-6 rounded flex items-center justify-center">
-                <span className="text-gray-600">Project Preview</span>
-              </div>
+              {/* Project image cover */}
+                    <div className="relative h-64 md:h-80 mb-6 rounded overflow-hidden">
+                      {activeProject.id === 1 ? (
+                        <img
+                          src="/trellobanner.jpg"
+                          alt={activeProject.title}
+                          className="object-cover w-full h-full"
+                        />
+                      ) : (
+                        <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
+                      <span className="text-gray-600">Project Preview</span>
+                    </div>
+                  )}
+                </div>
               
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-2">Project Overview</h4>
