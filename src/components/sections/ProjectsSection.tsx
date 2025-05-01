@@ -29,11 +29,13 @@ const ProjectsSection = () => {
     },
     {
       id: 2,
-      title: 'Video Production',
+      title: 'Opener Conference – Lagoinha Conference',
       category: 'Video Production',
-      description: 'High-end product launch video showcasing features and benefits with cinematic visuals and dynamic motion graphics.',
-      technical: 'Shot on RED camera with custom lighting setup. Post-production in Premiere Pro with After Effects integration.',
-      client: 'Innovate Products'
+      description: 'Full audiovisual production for a church conference, including direction, editing, motion graphics, and final delivery.',
+      technical: 'End-to-end workflow using Adobe Premiere, After Effects and DaVinci Resolve. Included animation, color grading and final mastering.',
+      client: 'Lagoinha Dublin Church',
+      url: 'https://youtu.be/zChwwhje3xw', // substitua com o link real
+      moreProjectsUrl: 'https://www.behance.net/gallery/210865103/From-Heaven-To-Ireland-Conference-2024-Brand'
     },
     {
       id: 3,
@@ -97,6 +99,10 @@ const ProjectsSection = () => {
                     alt={project.title}
                     className="object-cover w-full h-full"
                   />
+                ) : project.id === 2 ? (
+                  <img src="/conferenciafronheaventoireland.png" 
+                      alt={project.title} 
+                      className="object-cover w-full h-full" />
                 ) : (
                   <div className="bg-gradient-to-br from-gray-800 to-black w-full h-full flex items-center justify-center">
                     <span className="text-red-600 font-bold">{project.category}</span>
