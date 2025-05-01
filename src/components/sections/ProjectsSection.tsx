@@ -151,10 +151,16 @@ const ProjectsSection = () => {
               </div>
 
               {/* Project image cover */}
-              <div className="relative h-64 md:h-80 mb-6 rounded overflow-hidden">
+             <div className="relative h-64 md:h-80 mb-6 rounded overflow-hidden">
                 {activeProject.id === 1 ? (
                   <img
                     src="/trellobanner.jpg"
+                    alt={activeProject.title}
+                    className="object-cover w-full h-full"
+                  />
+                ) : activeProject.id === 2 ? (
+                  <img
+                    src="/conferenciafronheaventoireland.png"
                     alt={activeProject.title}
                     className="object-cover w-full h-full"
                   />
@@ -164,6 +170,7 @@ const ProjectsSection = () => {
                   </div>
                 )}
               </div>
+
 
               <div className="mb-6">
                 <h4 className="text-lg font-semibold mb-2">Project Overview</h4>
